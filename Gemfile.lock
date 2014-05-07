@@ -15,31 +15,14 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    awesome_print (1.2.0)
     builder (3.2.2)
-    chronic (0.10.2)
-    fast-stemmer (1.0.2)
-    google_scraper (0.0.1)
-      methadone (~> 1.2.2)
-      nokogiri
     i18n (0.6.9)
     json (1.8.1)
-    methadone (1.2.6)
-      bundler
-    mini_portile (0.5.3)
     minitest (5.3.3)
     mysql (2.9.1)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
-    pismo (0.7.4)
-      awesome_print
-      chronic
-      fast-stemmer
-      nokogiri
-      sanitize
+    pg (0.17.1)
     rack (1.5.2)
-    sanitize (2.1.0)
-      nokogiri (>= 1.4.4)
+    rake (10.3.1)
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
@@ -56,8 +39,8 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
-  google_scraper
   mysql
-  pismo
+  pg
+  rake
   sinatra
   sinatra-activerecord
