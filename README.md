@@ -16,3 +16,6 @@ This application provides an API over recommendations provided by the https://gi
 * foreman start
 * Load http://localhost:5000/similar?url=http://www.bbc.co.uk/arts/0/23243705 in a client
 
+# Show me more
+
+http://kandlrecommendations.herokuapp.com/similar?url=http://www.bbc.co.uk/guides/zxcbb9q
