@@ -8,7 +8,8 @@ require './config/environments'
 Dir.glob('./models/*.rb').each { |r| require r}
 
 get '/' do
-
+  @documents = Document.all.where('documents.url LIKE "%/guides/%"').limit(20)
+  erb :index
 end
 
 get '/similar' do
