@@ -10,7 +10,7 @@ Dir.glob('./models/*.rb').each { |r| require r}
 set :public_folder, 'public'
 
 get '/' do
-  @documents = Document.all.where('documents.url LIKE "%/guides/%"').limit(20)
+  @documents = Document.all.where('documents.url LIKE "%/guides/%"').limit(50)
   erb :index
 end
 
